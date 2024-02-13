@@ -76,7 +76,7 @@
             content: '';
             width: 10px;
             height: 10px;
-            background: #000000;
+            background: #fff;
             border-radius: 50%;
             position: absolute;
             left: 50%;
@@ -470,6 +470,10 @@
                         }
                         setTimeout(() => {
                             WHO = Bot.id;
+                            // var indicators = document.getElementsByClassName('indicator');
+                            // for (var i = 0; i < indicators.length; i++) {
+                            //     indicators[i].style.background = '#000';
+                            // }
                             botStep();
                         }, 333);
                         if (returnBtn) {
@@ -558,6 +562,10 @@
                         return true;
                     }
                     WHO = Human.id;
+                    // var indicators = document.getElementsByClassName('indicator');
+                    // for (var i = 0; i < indicators.length; i++) {
+                    //     indicators[i].style.background = '#000';
+                    // }
                     return true;
                 }
             }
