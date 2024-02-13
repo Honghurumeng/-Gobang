@@ -72,6 +72,25 @@
             transform: translateX(-50%);
         }
 
+        .indicator {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #000000;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            display: none;
+            pointer-events: none;
+        }
+
+        .board_unit:hover .indicator {
+            display: block;
+        }
+
         .board_unit>span {
             width: 100%;
             height: 100%;
@@ -255,7 +274,7 @@
                     gridUnitWidth +
                     'px;" data-value=' +
                     v +
-                    '><span></span></li>'
+                    '><div class="indicator"></div><span></span></li>'
                 );
             }
 
